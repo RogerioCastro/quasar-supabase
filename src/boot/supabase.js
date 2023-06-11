@@ -5,7 +5,7 @@ const supabaseUrl = process.env.API_URL
 const supabaseKey = process.env.API_KEY
 const supabase = createClient(supabaseUrl, supabaseKey)
 
-console.log('supabase:', supabase)
+// console.log('supabase:', supabase)
 
 supabase.auth.onAuthStateChange((event, session) => {
   const { user } = useAuthUser()

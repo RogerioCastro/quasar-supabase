@@ -11,7 +11,6 @@
 const { configure } = require('quasar/wrappers')
 
 require('dotenv').config()
-// console.log('env:', process.env)
 
 module.exports = configure(function (/* ctx */) {
   return {
@@ -64,7 +63,8 @@ module.exports = configure(function (/* ctx */) {
       vueRouterMode: 'history', // available values: 'hash', 'history'
       env: {
         API_URL: process.env.API_URL,
-        API_KEY: process.env.API_KEY
+        API_KEY: process.env.API_KEY,
+        SITE_URL: process.env.SITE_URL
       }
       // vueRouterBase,
       // vueDevtools,

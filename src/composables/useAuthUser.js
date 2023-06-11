@@ -48,7 +48,7 @@ export default function useAuthUser () {
         password,
         options: {
           data: meta,
-          emailRedirectTo: `${window.location.origin}/me?fromEmail=registrationConfirmation`
+          emailRedirectTo: `${process.env.SITE_URL}/me?fromEmail=registrationConfirmation`
         }
       }
     )
@@ -68,7 +68,7 @@ export default function useAuthUser () {
 
   const sendPasswordRestEmail = async (email) => {
     const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: `${window.location.origin}/reset-password`
+      redirectTo: `${process.env.SITE_URL}/reset-password`
     })
     // const { user, error } = await supabase.auth.api.resetPasswordForEmail(email)
     if (error) {
@@ -77,7 +77,7 @@ export default function useAuthUser () {
     return data
   }
 
-  const teste = async () => {
+  /* const teste = async () => {
     const { data: users, error } = await supabase
       .from('auth.users')
       .select('*')
@@ -86,7 +86,7 @@ export default function useAuthUser () {
       throw error
     }
     return users
-  }
+  } */
 
   return {
     user,
@@ -96,7 +96,6 @@ export default function useAuthUser () {
     isLoggedIn,
     register,
     update,
-    sendPasswordRestEmail,
-    teste
+    sendPasswordRestEmail
   }
 }
