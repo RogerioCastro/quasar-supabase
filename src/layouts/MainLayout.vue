@@ -26,7 +26,7 @@
                 <q-item-label>Alterar senha</q-item-label>
               </q-item-section>
               <q-item-section side>
-                <q-icon name="key" />
+                <q-icon name="lock_reset" />
               </q-item-section>
             </q-item>
             <q-item clickable v-close-popup @click="handleLogout">
