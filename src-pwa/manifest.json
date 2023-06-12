@@ -1,4 +1,9 @@
 {
+  "name": "Quasar Supabase",
+  "short_name": "Quasar Supabase",
+  "start_url": ".",
+  "display": "standalone",
+  "description": "App de teste Quasar e Supabase.",
   "orientation": "portrait",
   "background_color": "#ff6e60",
   "theme_color": "#ff6e60",

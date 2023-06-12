@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          Quasar Supabase
         </q-toolbar-title>
 
         <q-btn-dropdown flat color="white" icon="person">

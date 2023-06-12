@@ -2,7 +2,7 @@
   "name": "quasar-supabase",
   "version": "0.0.1",
   "description": "A Quasar Project",
-  "productName": "Quasar Supabase App",
+  "productName": "Quasar Supabase",
   "author": "Rogério Castro",
   "private": true,
   "scripts": {
